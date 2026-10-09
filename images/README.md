@@ -4,9 +4,9 @@ Coloque aqui as imagens usadas no site, por exemplo:
 - capa-1.jpg
 - destaques-1.jpg
 
-Os caminhos do `index.html` já apontam para a pasta `images/`.
+Os caminhos do `index.html` já apontam para a pasta `imagens/`.
 
 Exemplo:
 ```html
-<img src="images/capa-1.jpg" alt="Barbearia Deck">
+<img src="imagens/capa-1.jpg" alt="Barbearia Deck">
 ```
