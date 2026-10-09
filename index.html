@@ -1,0 +1,95 @@
+octype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BARBEARIA DECK BARBERSHOP — Barbearia</title>
+<meta name="description" content="BARBEARIA DECK BARBERSHOP — Barbearia. Av. Dois de Junho, 2660 - Centro, Cacoal - RO, 76963-854, Brasil">
+<meta property="og:title" content="BARBEARIA DECK BARBERSHOP"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14110f;--paper:#f7f3ec;--card:#fffdf8;--gold:#c8962e;--gold2:#e8c06a;--muted:#6d655c;--line:#e6dfd3}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{font-family:Manrope,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:inherit}img{max-width:100%}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 6vw;transition:.3s;color:#fff}
+header.solid{background:rgba(247,243,236,.95);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+header b{font-family:Fraunces,serif;font-size:1.4rem}nav a{margin-left:1.8rem;text-decoration:none;font-size:.92rem;font-weight:600;opacity:.85}nav a:hover{opacity:1;color:var(--gold)}
+.hero{position:relative;min-height:100vh;display:grid;align-items:center;padding:8rem 6vw 6rem;color:#fff;overflow:hidden;background:#14110f url('images/capa-1.jpg') center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,17,15,.92) 0%,rgba(20,17,15,.55) 55%,rgba(20,17,15,.25))}
+#water{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:.55}
+.hero .in{position:relative;max-width:46rem}.tag{color:var(--gold2);letter-spacing:.22em;text-transform:uppercase;font-size:.8rem;font-weight:700}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(3rem,8vw,6.5rem);line-height:.98;margin:.8rem 0 1.4rem}
+.hero p{font-size:1.2rem;opacity:.88;max-width:36rem}.btns{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem}
+.btn{display:inline-block;padding:1rem 2rem;background:var(--gold);color:var(--ink);border-radius:999px;font-weight:700;text-decoration:none;transition:.25s}.btn:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.scroll{position:absolute;left:50%;bottom:2rem;transform:translateX(-50%);font-size:.75rem;letter-spacing:.2em;opacity:.6}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));background:var(--ink);color:#fff}
+.stats div{padding:2.2rem 6vw;border-right:1px solid #2a2520}.stats strong{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--gold2)}.stats span{font-size:.85rem;opacity:.7}
+section{padding:7rem 6vw}.kicker{color:var(--gold);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;margin-bottom:.8rem}
+h2{font-family:Fraunces,serif;font-weight:500;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.1;margin-bottom:1.5rem;max-width:42rem}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center}.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;box-shadow:24px 24px 0 var(--gold)}
+.about p{color:var(--muted);font-size:1.1rem;margin-bottom:1rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;margin-top:3rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:2rem;transition:.3s}.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px -20px rgba(0,0,0,.25);border-color:var(--gold)}
+.card i{display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--ink);color:var(--gold2);font-style:normal;font-family:Fraunces,serif;font-size:1.2rem;margin-bottom:1.2rem}.card h3{font-family:Fraunces,serif;font-size:1.35rem;margin-bottom:.5rem}.card p{color:var(--muted);font-size:.95rem}
+.dark{background:var(--ink);color:#fff}.dark h2{color:#fff}
+.gallery{columns:3 260px;column-gap:1rem}.gallery figure{break-inside:avoid;margin-bottom:1rem;overflow:hidden;border-radius:4px;cursor:zoom-in}.gallery img{width:100%;display:block;transition:transform .6s}.gallery figure:hover img{transform:scale(1.06)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s;margin-top:3rem}.steps div{border-top:2px solid var(--gold);padding-top:1.5rem}
+.steps div:before{counter-increment:s;content:"0" counter(s);font-family:Fraunces,serif;font-size:2.6rem;color:var(--gold)}.steps h3{font-family:Fraunces,serif;font-size:1.3rem;margin:.4rem 0}.steps p{color:var(--muted)}
+.quote{text-align:center;max-width:52rem;margin:auto}.quote .stars{color:var(--gold2);font-size:2rem;letter-spacing:.3rem}.quote blockquote{font-family:Fraunces,serif;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.3;margin:1.5rem 0}
+details{border-bottom:1px solid var(--line);padding:1.4rem 0}summary{cursor:pointer;font-family:Fraunces,serif;font-size:1.25rem;list-style:none;display:flex;justify-content:space-between}summary:after{content:"+";color:var(--gold)}details[open] summary:after{content:"–"}details p{color:var(--muted);margin-top:.8rem}
+.faq{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem}
+.band{background:linear-gradient(120deg,var(--gold),var(--gold2));text-align:center;padding:5rem 6vw}.band h2{margin:0 auto 1.5rem}.band .btn{background:var(--ink);color:#fff}
+.contact{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem}ul{list-style:none;padding:0}li{padding:1.1rem 0;border-bottom:1px solid var(--line)}li span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:700}
+iframe{width:100%;height:100%;min-height:420px;border:0;border-radius:6px}
+footer{padding:3rem 6vw;background:var(--ink);color:#999;font-size:.88rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}footer b{font-family:Fraunces,serif;color:#fff;font-size:1.2rem}
+.wa{position:fixed;right:1.3rem;bottom:1.3rem;z-index:30;background:#25d366;color:#fff;border-radius:999px;padding:1rem 1.4rem;font-weight:700;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.lb{position:fixed;inset:0;z-index:40;background:rgba(10,8,6,.92);display:none;place-items:center;padding:4vw;cursor:zoom-out}.lb.on{display:grid}.lb img{max-height:90vh;border-radius:4px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.vis{opacity:1;transform:none}
+@media(max-width:860px){.about,.contact,.faq{grid-template-columns:1fr;gap:2.5rem}.steps{grid-template-columns:1fr}nav{display:none}section{padding:5rem 6vw}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}#water{display:none}}
+</style></head><body>
+<header id="top"><b>BARBEARIA DECK BARBERSHOP</b><nav><a href="#sobre">Sobre</a><a href="#diferenciais">Diferenciais</a><a href="#fotos">Fotos</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav></header>
+<section class="hero"><canvas id="water" aria-hidden="true"></canvas><div class="in"><div class="tag">Barbearia</div><h1>BARBEARIA DECK BARBERSHOP</h1>
+<p>Barbearia com qualidade e carinho, em Av. Dois de Junho, 2660 - Centro, Cacoal - RO, 76963-854, Brasil.</p>
+<div class="btns"><a class="btn" href="https://wa.me/5569993765271" target="_blank" rel="noopener">Fale no WhatsApp</a><a class="btn ghost" href="#sobre">Conheça</a></div></div><div class="scroll">ROLE ↓</div></section>
+<div class="stats"><div><strong>★ 5</strong><span>Avaliação no Google</span></div><div><strong>10+</strong><span>Fotos do nosso espaço</span></div><div><strong>Rápido</strong><span>Atendimento no WhatsApp</span></div><div><strong>Local</strong><span>76963-854, Brasil</span></div></div>
+<section id="sobre"><div class="about"><div class="reveal"><div class="kicker">Sobre nós</div><h2>Feito com dedicação para quem valoriza o melhor.</h2>
+<p>BARBEARIA DECK BARBERSHOP é referência em Barbearia na região. Nosso compromisso é oferecer uma experiência completa, do primeiro contato ao resultado final.</p>
+<p>Venha nos conhecer pessoalmente ou fale com a gente agora mesmo — será um prazer atender você.</p><div class="btns"><a class="btn" href="https://wa.me/5569993765271">Falar com a equipe</a></div></div>
+<img class="reveal" src="images/destaques-1.jpg" alt="BARBEARIA DECK BARBERSHOP" loading="lazy"></div></section>
+<section id="diferenciais" class="dark"><div class="kicker">Por que nos escolher</div><h2>O que faz a diferença.</h2><div class="cards"><div class="card reveal" style="background:#1d1915;border-color:#2e2822"><i>1</i><h3>Qualidade</h3><p style="color:#b5aca1">Cuidado em cada detalhe para que sua experiência com Barbearia seja a melhor.</p></div><div class="card reveal" style="background:#1d1915;border-color:#2e2822"><i>2</i><h3>Atendimento</h3><p style="color:#b5aca1">Equipe atenciosa, pronta para ouvir e resolver o que você precisa.</p></div><div class="card reveal" style="background:#1d1915;border-color:#2e2822"><i>3</i><h3>Confiança</h3><p style="color:#b5aca1">Clientes que voltam e recomendam — nossa melhor propaganda.</p></div><div class="card reveal" style="background:#1d1915;border-color:#2e2822"><i>4</i><h3>Praticidade</h3><p style="color:#b5aca1">Fale com a gente em segundos pelo WhatsApp ou telefone.</p></div></div></section>
+<section id="fotos"><div class="kicker">Galeria</div><h2>Um pouco do nosso dia a dia.</h2><div class="gallery"><figure class="reveal"><img src="images/destaques-1.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 2" loading="lazy"></figure><figure class="reveal"><img src="images/destaques-2.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 3" loading="lazy"></figure><figure class="reveal"><img src="images/destaques-3.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 4" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-1.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 5" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-2.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 6" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-3.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 7" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-4.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 8" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-5.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 9" loading="lazy"></figure><figure class="reveal"><img src="images/galeria-6.jpg" alt="BARBEARIA DECK BARBERSHOP — foto 10" loading="lazy"></figure></div></section>
+<section style="background:var(--card)"><div class="kicker">Como funciona</div><h2>Simples, do jeito que deve ser.</h2><div class="steps">
+<div class="reveal"><h3>Fale com a gente</h3><p>Chame no WhatsApp ou ligue. Respondemos rápido.</p></div>
+<div class="reveal"><h3>Combine os detalhes</h3><p>Entendemos o que você precisa e indicamos a melhor opção.</p></div>
+<div class="reveal"><h3>Aproveite</h3><p>Receba um atendimento de qualidade, do início ao fim.</p></div></div></section>
+<section class="dark"><div class="quote reveal"><div class="stars">★★★★★</div><blockquote>Avaliação 5 no Google, dada por clientes reais.</blockquote><a class="btn" href="https://wa.me/5569993765271" target="_blank" rel="noopener">Ver avaliações</a></div></section>
+<section id="duvidas"><div class="faq"><div><div class="kicker">Dúvidas</div><h2>Perguntas frequentes.</h2></div><div><details><summary>Como faço para entrar em contato?</summary><p>O jeito mais rápido é pelo botão de WhatsApp nesta página.</p></details><details><summary>Onde vocês ficam?</summary><p>Av. Dois de Junho, 2660 - Centro, Cacoal - RO, 76963-854, Brasil. Veja o mapa logo abaixo.</p></details><details><summary>Qual o horário de funcionamento?</summary><p>segunda-feira: 09:00 – 20:00 · terça-feira: 09:00 – 20:00 · quarta-feira: 09:00 – 20:00 · quinta-feira: 09:00 – 20:00 · sexta-feira: 09:00 – 20:00 · sábado: 09:00 – 19:00 · domingo: Fechado</p></details><details><summary>Preciso agendar?</summary><p>Recomendamos chamar antes para garantir o melhor atendimento.</p></details></div></div></section>
+<div class="band"><h2>Pronto para nos conhecer?</h2><a class="btn" href="https://wa.me/5569993765271">Chamar no WhatsApp</a></div>
+<section id="contato"><div class="kicker">Contato</div><h2>Estamos esperando você.</h2><div class="contact"><ul><li><span>Telefone</span><a href="tel:(69)99376-5271">(69) 99376-5271</a></li><li><span>WhatsApp</span><a href="https://wa.me/5569993765271" target="_blank" rel="noopener">https://wa.me/5569993765271</a></li><li><span>Endereço</span>Av. Dois de Junho, 2660 - Centro, Cacoal - RO, 76963-854, Brasil</li><li><span>Horário</span>segunda-feira: 09:00 – 20:00 · terça-feira: 09:00 – 20:00 · quarta-feira: 09:00 – 20:00 · quinta-feira: 09:00 – 20:00 · sexta-feira: 09:00 – 20:00 · sábado: 09:00 – 19:00 · domingo: Fechado</li><li><span>Instagram</span>http://instagram.com/deckcacoal</li></ul>
+<iframe loading="lazy" src="https://maps.google.com/maps?q=Av.%20Dois%20de%20Junho%2C%202660%20-%20Centro%2C%20Cacoal%20-%20RO%2C%2076963-854%2C%20Brasil&output=embed" title="Mapa de BARBEARIA DECK BARBERSHOP"></iframe></div></section>
+<footer><b>BARBEARIA DECK BARBERSHOP</b><span>© 2026 BARBEARIA DECK BARBERSHOP. Todos os direitos reservados.</span><a href="#top">Voltar ao topo ↑</a></footer>
+<a class="wa" href="https://wa.me/5569993765271" target="_blank" rel="noopener">WhatsApp</a>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){
+var h=document.getElementById('top');addEventListener('scroll',function(){h.classList.toggle('solid',scrollY>60)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+var lb=document.getElementById('lb');document.querySelectorAll('.gallery img').forEach(function(i){i.onclick=function(){lb.firstChild.src=i.src;lb.classList.add('on')}});lb.onclick=function(){lb.classList.remove('on')};
+// Água: ondas contínuas na capa, com interação por mouse e toque.
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var c=document.getElementById('water'),x=c.getContext('2d'),S=4,W,H,a,b,img,run=true;
+function size(){W=Math.ceil(c.offsetWidth/S);H=Math.ceil(c.offsetHeight/S);c.width=W;c.height=H;a=new Float32Array(W*H);b=new Float32Array(W*H);img=x.createImageData(W,H)}
+size();addEventListener('resize',size);
+function drop(px,py,r,s){for(var j=-r;j<=r;j++)for(var i=-r;i<=r;i++){var X=px+i,Y=py+j,d=i*i+j*j;if(X>0&&Y>0&&X<W-1&&Y<H-1&&d<r*r)a[Y*W+X]+=s*(1-Math.sqrt(d)/r)}}
+var hero=c.parentNode,lastRipple=0,lastX=0,lastY=0;
+hero.addEventListener('pointermove',function(e){var now=performance.now(),r=c.getBoundingClientRect(),px=(e.clientX-r.left)/S|0,py=(e.clientY-r.top)/S|0,dx=px-lastX,dy=py-lastY;if(now-lastRipple<45||dx*dx+dy*dy<2)return;drop(px,py,4,e.pointerType==='touch'?120:165);lastRipple=now;lastX=px;lastY=py});
+hero.addEventListener('pointerdown',function(e){var r=c.getBoundingClientRect();drop((e.clientX-r.left)/S|0,(e.clientY-r.top)/S|0,5,210)});
+new IntersectionObserver(function(e){run=e[0].isIntersecting}).observe(hero);
+var t=0;function step(){requestAnimationFrame(step);if(!run||document.hidden)return;if(++t%78==0){drop(Math.random()*W|0,Math.random()*H|0,3,125);drop(Math.random()*W|0,Math.random()*H|0,2,75)}
+for(var y=1;y<H-1;y++)for(var i=y*W+1,e=y*W+W-1;i<e;i++){b[i]=((a[i-1]+a[i+1]+a[i-W]+a[i+W])/2-b[i])*.985}
+var d=img.data;for(var k=W+1;k<(H-1)*W-1;k++){var dx=b[k+1]-b[k-1],dy=b[k+W]-b[k-W],slope=Math.sqrt(dx*dx+dy*dy),p=k*4;d[p]=170;d[p+1]=220;d[p+2]=255;d[p+3]=Math.min(145,slope*4+Math.abs(b[k])*.12)}
+x.putImageData(img,0,0);var s=a;a=b;b=s}
+step();
+})();
+</script>
+</body></html>
